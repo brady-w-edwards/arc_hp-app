@@ -11,10 +11,10 @@ export default function HeroCard() {
       <div className="container px-4 md:px-6 flex flex-col items-center text-center">
         <div className="max-w-3xl space-y-4">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-primary-foreground">
-            Unlock Your Athletic Potential
+            Reach Optimal Performance
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/80">
-            Streamline your programming, boost productivity, and drive adaptations.
+            A tool to push the boundaries and reach new heights for coaches and athletes
           </p>
           <div>
             <Link
