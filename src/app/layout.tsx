@@ -2,17 +2,7 @@ import "../styles/global.css"
 import {Providers} from "./providers";
 import { Inter as FontSans } from "next/font/google"
 import { cn } from "@/lib/utils"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/src/components/ui/navigation-menu"
-import NavMenu from "../components/chadcn/navigationmenu";
+import { NavMenu } from "./_header/header";
 
  
 const fontSans = FontSans({
@@ -30,7 +20,6 @@ export default function RootLayout({
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <Providers>
           <NavMenu/>
-          
           <main>{children}</main>
 
           <footer>
