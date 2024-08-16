@@ -641,6 +641,17 @@ video {
     max-width: 1400px;
   }
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 .absolute {
   position: absolute;
 }
@@ -670,9 +681,6 @@ video {
 }
 .z-10 {
   z-index: 10;
-}
-.z-30 {
-  z-index: 30;
 }
 .z-50 {
   z-index: 50;
@@ -740,9 +748,6 @@ video {
 .hidden {
   display: none;
 }
-.aspect-\[4\/3\] {
-  aspect-ratio: 4/3;
-}
 .aspect-\[9\/4\] {
   aspect-ratio: 9/4;
 }
@@ -763,9 +768,6 @@ video {
 }
 .h-12 {
   height: 3rem;
-}
-.h-16 {
-  height: 4rem;
 }
 .h-2 {
   height: 0.5rem;
@@ -805,6 +807,9 @@ video {
 }
 .h-px {
   height: 1px;
+}
+.h-16 {
+  height: 4rem;
 }
 .min-h-\[100dvh\] {
   min-height: 100dvh;
@@ -1148,10 +1153,6 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1413,6 +1414,11 @@ video {
 
 .hover\:text-primary:hover {
   color: hsl(var(--primary));
+}
+
+
+.hover\:text-foreground:hover {
+  color: hsl(var(--foreground));
 }
 
 
@@ -1712,11 +1718,6 @@ video {
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
 }
 
 
@@ -1728,6 +1729,10 @@ video {
 
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:w-\[400px\] {
@@ -1758,6 +1763,18 @@ video {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .md\:p-12 {
     padding: 3rem;
   }
@@ -1765,11 +1782,6 @@ video {
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .md\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 
   .md\:py-16 {
@@ -1800,6 +1812,16 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1842,9 +1864,8 @@ video {
     grid-template-columns: .75fr 1fr;
   }
 
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg\:py-20 {

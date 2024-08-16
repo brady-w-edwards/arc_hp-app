@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link"
 
-export default function App() {
+export default function Website() {
   return (
     <>
     <section className="w-full py-20 md:py-32 lg:py-40 bg-gradient-to-r from-primary to-primary/80">
