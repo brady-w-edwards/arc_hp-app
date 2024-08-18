@@ -22,25 +22,10 @@
       "static/css/app/(application)/layout.css",
       "static/chunks/app/(application)/layout.js"
     ],
-    "/(application)/programs/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(application)/programs/page.js"
-    ],
-    "/(application)/athletes/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(application)/athletes/page.js"
-    ],
     "/(application)/exercisedb/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(application)/exercisedb/page.js"
-    ],
-    "/(website)/sign-in/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(website)/sign-in/page.js"
     ]
   }
 }

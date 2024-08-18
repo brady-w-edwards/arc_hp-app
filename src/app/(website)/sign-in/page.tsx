@@ -13,8 +13,8 @@ import { Separator } from "@/src/components/ui/seperator"
 
 export default function SignInForm() {
   return (
-    <div className="flex items-center justify-center">
-    <Card className="w-full max-w-sm">
+    <div className="flex flex-row min-h-screen justify-center items-center">
+    <Card>
       <CardHeader>
         <CardTitle className="text-2xl">Sign In</CardTitle>
         <CardDescription>
@@ -36,7 +36,7 @@ export default function SignInForm() {
         </div>
       </CardContent>
       <CardFooter>
-        <Button className="w-full">Sign in</Button>
+        <Button formAction= "signin" className="w-full">Sign in</Button>
       </CardFooter>
     </Card>
     </div>
