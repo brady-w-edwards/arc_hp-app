@@ -11,21 +11,10 @@
       "static/css/app/(website)/layout.css",
       "static/chunks/app/(website)/layout.js"
     ],
-    "/(application)/dashboard/page": [
+    "/(website)/authentication/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(application)/dashboard/page.js"
-    ],
-    "/(application)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(application)/layout.css",
-      "static/chunks/app/(application)/layout.js"
-    ],
-    "/(application)/exercisedb/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(application)/exercisedb/page.js"
+      "static/chunks/app/(website)/authentication/page.js"
     ]
   }
 }

@@ -17,14 +17,12 @@ export default function DashboardLayout({
     return (
       <html lang="en" className="dark">
         <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
-          <Providers>
-            <AppHeader/>
-            <main>{children}</main>
-  
-            <footer>
-  
-            </footer>
-          </Providers>
+          <AppHeader/>
+          <main>{children}</main>
+
+          <footer>
+
+          </footer>
         </body>
       </html>
     );

@@ -141,9 +141,9 @@ export function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/sign-in" legacyBehavior passHref>
+          <Link href="/authentication" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Sign In
+              Get Started
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
